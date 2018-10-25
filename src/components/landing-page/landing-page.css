@@ -1,0 +1,340 @@
+.landing-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    background-image: radial-gradient(circle, #200535 0%, #0F121A 100%);
+}
+
+.name-card-cont {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+    z-index: 1;
+    padding: 0px 40px 40px 40px;
+}
+
+.social-media-cont {
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.loader-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 1;
+    transition: all 5s ease;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hide-loader {
+    opacity: 0;
+}
+
+.loader-text {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.loader-text li {
+    font-family: orbitron;
+    font-size: 32px;
+    font-weight: bold;
+    transition: all 3s ease;
+    user-select: none;
+}
+
+.expand.loader-text li {
+    opacity: 0;
+    font-size: 8px;
+}
+
+.expand.loader-text li:nth-child(1) {
+    transform: translate3d(-70px, 0, 100px);
+}
+
+.expand.loader-text li:nth-child(2) {
+    transform: translate3d(-50px, 0, 0);
+}
+
+.expand.loader-text li:nth-child(3) {
+    transform: translate3d(-40px, 0, 0);
+}
+
+.expand.loader-text li:nth-child(4) {
+    transform: translate3d(-30px, 0, 0);
+}
+
+.expand.loader-text li:nth-child(5) {
+    transform: translate3d(0px, 0, 0);
+}
+
+.expand.loader-text li:nth-child(6) {
+    transform: translate3d(20px, 0, 0);
+}
+
+.expand.loader-text li:nth-child(7) {
+    transform: translate3d(40px, 0, 0);
+}
+
+.expand.loader-text li:nth-child(8) {
+    transform: translate3d(60px, 0, 0);
+}
+
+.expand.loader-text li:nth-child(9) {
+    transform: translate3d(80px, 0, 0);
+}
+
+.loader-text li:nth-child(9) {
+    position: relative;
+    right: 0px;
+}
+
+.animate.loader-text li:nth-child(1) {
+    transform: translate3d(-400px, 300px, 0);
+    opacity: 0;
+}
+
+.animate.loader-text li:nth-child(2) {
+    transform: translate3d(-400px, -300px, 0);
+    opacity: 0;
+}
+
+.animate.loader-text li:nth-child(3) {
+    transform: translate3d(-500px, 0, 0);
+    opacity: 0;
+}
+
+.animate.loader-text li:nth-child(4) {
+    transform: translate3d(0, 200px, 0);
+    opacity: 0;
+}
+
+.animate.loader-text li:nth-child(5) {
+    transform: translate3d(0, -200px, 0);
+    opacity: 0;
+}
+
+.animate.loader-text li:nth-child(6) {
+    transform: translate3d(-300px, 400px, 0);
+    opacity: 0;
+}
+
+.animate.loader-text li:nth-child(7) {
+    transform: translate3d(-200px, 0, 0);
+    opacity: 0;
+}
+
+.animate.loader-text li:nth-child(8) {
+    transform: translate3d(-200px, -500px, 0);
+    opacity: 0;
+}
+
+.reload-bullet.loader-text li:nth-child(9) {
+    transform: rotate(-90deg);
+    position: relative;
+    right: -350px;
+    animation: vibrate 2s ease 2s;
+}
+
+.fire-bullet.loader-text li:nth-child(9) {
+    transition: all 0.5s linear;
+    right: 500px;
+    opacity: 0;
+}
+
+@keyframes vibrate {
+    0%,
+    100% {
+        top: 0px
+    }
+    10%,
+    20%,
+    30%,
+    40%,
+    50%,
+    60%,
+    70%,
+    80% {
+        top: -3px;
+    }
+    15%,
+    25%,
+    35%,
+    45%,
+    55%,
+    65%,
+    75%,
+    80% {
+        top: 3px;
+    }
+}
+
+.hamburger-menu-cont {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.hamburger-menu__bar {
+    height: 1px;
+    background: white;
+    width: 24px;
+    margin-bottom: 3px;
+    list-style: none;
+    transition: all 0.2s ease;
+}
+
+.hamburger-menu__icon {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    cursor: pointer;
+    transition: all 1s ease;
+    z-index: 11;
+}
+
+.hamburger-menu__icon.hamburger-open li:nth-child(1) {
+    transform: rotate(-45deg);
+    margin-bottom: 0;
+    height: 3px;
+}
+
+.hamburger-menu__icon.hamburger-open li:nth-child(2) {
+    transform: rotate(45deg);
+    margin-bottom: 0;
+    height: 3px;
+}
+
+.hamburger-menu__icon.hamburger-open li:nth-child(3) {
+    transform: rotate(-45deg);
+    margin-bottom: 0;
+    opacity: 0;
+}
+
+.hamburger-menu__icon.hamburger-open li:nth-child(4) {
+    transform: rotate(45deg);
+    margin-bottom: 0;
+    opacity: 0;
+}
+
+.hamburger-menu__icon.hamburger-open .hamburger-menu-cont {
+    z-index: 10;
+}
+
+@media only screen and (max-width: 1150px) {
+    .name-card-cont {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .social-media-cont {
+        top: 0;
+        right: 50%;
+        transform: translateX(50%);
+        height: fit-content;
+    }
+    .social-media-wrap {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .landing-page-container {
+        align-items: center;
+    }
+    .name-card-cont {
+        padding: 0px 0px 40px 0px;
+        width: 90%;
+    }
+    .name-card-wrap {
+        align-items: center;
+    }
+    .reload-bullet.loader-text li:nth-child(9) {
+        transform: rotate(-90deg);
+        position: relative;
+        right: -200px;
+        animation: vibrate 2s ease 2s;
+    }
+    .fire-bullet.loader-text li:nth-child(9) {
+        transition: all 0.5s linear;
+        right: 500px;
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .profile-name {
+        font-size: 16px;
+        word-spacing: 2px;
+    }
+    .profile-introduction {
+        font-size: 14px;
+    }
+    .profile-note {
+        font-size: 10px;
+    }
+    .name-card-cont {
+        width: 100%;
+    }
+    .separator {
+        width: 100%;
+    }
+    .reload-bullet.loader-text li:nth-child(9) {
+        transform: rotate(-90deg);
+        position: relative;
+        right: -50%;
+        animation: vibrate 2s ease 2s;
+    }
+    .fire-bullet.loader-text li:nth-child(9) {
+        transition: all 0.5s linear;
+        right: 100%;
+        opacity: 0;
+    }
+    .hamburger-menu__icon {
+        left: 20px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .profile-name {
+        /* font-size: 15px; */
+        word-spacing: 0px;
+        letter-spacing: 0px;
+    }
+    .profile-name {
+        font-size: 14px;
+    }
+    .reload-bullet.loader-text li:nth-child(9) {
+        transform: rotate(-90deg);
+        position: relative;
+        right: -50%;
+        animation: vibrate 2s ease 2s;
+    }
+    .fire-bullet.loader-text li:nth-child(9) {
+        transition: all 0.5s linear;
+        right: 100%;
+        opacity: 0;
+    }
+    .hamburger-menu__icon {
+        left: 20px;
+    }
+}
+
+.display-none {
+    display: none;
+}

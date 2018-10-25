@@ -1,0 +1,36 @@
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('./assets/Orbitron/Orbitron-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Tele-Grotesk-Ultr';
+    src: url('./assets/Tele-Grotesk-Ultr/Tele-Grotesk-Ultr.eot') format('embedded-opentype'), url('./assets/Tele-Grotesk-Ultr/Tele-Grotesk-Ultr.ttf') format('truetype'), url('./assets/Tele-Grotesk-Ultr/Tele-Grotesk-Ultr.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tele-Grotesk-Norm';
+    src: url('./assets/Tele-Grotesk-Norm/Tele-Grotesk-Norm.eot?#iefix') format('embedded-opentype'), url('./assets/Tele-Grotesk-Norm/Tele-Grotesk-Norm.woff') format('woff'), url('./assets/Tele-Grotesk-Norm/Tele-Grotesk-Norm.ttf') format('truetype'), url('./assets/Tele-Grotesk-Norm/Tele-Grotesk-Norm.svg#Tele-Grotesk-Norm') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tele-Grotesk-Fett';
+    src: url('./assets/Tele-Grotesk-Fett/Tele-Grotesk-Fett.eot?#iefix') format('embedded-opentype'), url('./assets/Tele-Grotesk-Fett/Tele-Grotesk-Fett.woff') format('woff'), url('./assets/Tele-Grotesk-Fett/Tele-Grotesk-Fett.ttf') format('truetype'), url('./assets/Tele-Grotesk-Fett/Tele-Grotesk-Fett.svg#Tele-Grotesk-Fett') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

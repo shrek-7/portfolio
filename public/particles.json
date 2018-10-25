@@ -1,0 +1,46 @@
+{
+    "particles": {
+        "number": {
+            "value": 20
+        },
+        "color": {
+            "value": "#fff"
+        },
+        "shape": {
+            "type": "circle"
+        },
+        "opacity": {
+            "value": 0.6,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 1
+            }
+        },
+        "size": {
+            "value": 5
+        },
+        "move": {
+            "out_mode": "bounce",
+            "bounce": true,
+            "direction": "top-right"
+        }
+    },
+    "interactivity": {
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "grab"
+            }
+        },
+        "modes": {
+            "repulse": {
+                "distance": 80,
+                "duration": 0.4
+            },
+            "grab": {
+                "distance": 250
+            }
+        }
+    }
+}

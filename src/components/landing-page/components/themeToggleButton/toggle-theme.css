@@ -1,0 +1,32 @@
+.toggle-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-switch {
+    width: 50px;
+    padding: 3px;
+    border: 1px solid black;
+    position: relative;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.toggle-switch-ball {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #2DB1FF;
+    position: relative;
+    left: 0%;
+    transition: all 0.3s ease;
+}
+
+.toggle-switch.active .toggle-switch-ball {
+    left: calc(100% - 10px);
+}
