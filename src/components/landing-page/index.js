@@ -66,7 +66,7 @@ export default class LandingPage extends Component {
                         <li>!</li>
                     </ul>
                 </div>
-                <Particles 
+                {/* <Particles 
                     params={{
                             particles: {
                                 line_linked: {
@@ -122,7 +122,7 @@ export default class LandingPage extends Component {
                         top:0,
                         left:0 
                     }}
-                />
+                /> */}
                 <div className="name-card-cont">
                     {/* <NameCard/> */}
                 </div>

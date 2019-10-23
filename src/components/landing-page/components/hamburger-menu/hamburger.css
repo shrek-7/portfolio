@@ -5,6 +5,7 @@
     display: flex;
     flex-flow: wrap;
     overflow: hidden;
+    position: relative;
 }
 
 .hamburger-menu__contents>div {
@@ -47,4 +48,51 @@
 
 .hamburger-menu__contents.active .hamburger-menu-cont {
     z-index: 10;
+}
+
+.menu-contents {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 2;
+    font-size: 5vw;
+    color: #fff;
+    transform: translateY(-50%);
+    text-align: left;
+    font-family: 'RobotoLight';
+}
+.menu-contents li {
+    margin-bottom: 5vh;
+    font-family: 'RobotoThin';
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    transform: rotateX(90deg);
+    z-index: -1;
+}
+.hamburger-menu__contents.active .menu-contents li{
+    opacity: 1;
+    transform: translateX(0%) rotateX(0deg);
+    transform-origin: bottom;
+    z-index: 1;
+    display: flex;
+}
+
+.menu-contents li:nth-child(1) {
+    transition-delay: 0.5s;
+}
+.menu-contents li:nth-child(2) {
+    transition-delay: 0.75s;
+}
+.menu-contents li:nth-child(3) {
+    transition-delay: 1s;
+}
+.menu-contents li:nth-child(4) {
+    transition-delay: 1.25s;
+}
+.menu-contents li:hover {
+    transform: translateX(0%) rotateX(-360deg) !important;
+    transform-origin: center !important;
+    background: #fff;
+    color: black;
 }

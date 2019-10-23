@@ -5,6 +5,10 @@ ul {
     font-family: sans-serif;
 }
 
+li { 
+    list-style: none;
+}
+
 *:focus {
     outline: none;
 }
@@ -31,6 +35,18 @@ ul {
 @font-face {
     font-family: 'Tele-Grotesk-Fett';
     src: url('./assets/Tele-Grotesk-Fett/Tele-Grotesk-Fett.eot?#iefix') format('embedded-opentype'), url('./assets/Tele-Grotesk-Fett/Tele-Grotesk-Fett.woff') format('woff'), url('./assets/Tele-Grotesk-Fett/Tele-Grotesk-Fett.ttf') format('truetype'), url('./assets/Tele-Grotesk-Fett/Tele-Grotesk-Fett.svg#Tele-Grotesk-Fett') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('./assets/roboto/Roboto-Light.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoThin';
+    src: url('./assets/roboto/Roboto-Thin.ttf') ;
     font-weight: normal;
     font-style: normal;
 }

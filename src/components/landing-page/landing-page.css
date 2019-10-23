@@ -36,6 +36,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    display: none;
 }
 
 .hide-loader {
@@ -188,7 +189,12 @@
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: all 1s ease;
+}
+.hamburger-menu-cont.active {
+    transform: translateX(0%);
 }
 
 .hamburger-menu__bar {
@@ -233,9 +239,9 @@
     opacity: 0;
 }
 
-.hamburger-menu__icon.hamburger-open .hamburger-menu-cont {
-    z-index: 10;
-}
+/* .hamburger-menu-cont.active {
+    z-index: 2;
+} */
 
 @media only screen and (max-width: 1150px) {
     .name-card-cont {
