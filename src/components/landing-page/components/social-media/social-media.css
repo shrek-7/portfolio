@@ -3,6 +3,7 @@
     max-width: 200px;
     align-items: flex-end;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .social-icon {

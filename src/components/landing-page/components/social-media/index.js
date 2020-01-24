@@ -4,8 +4,8 @@ import instaPath from '../../../../assets/instagram.png';
 import linkedInPath from '../../../../assets/linkedin.png';
 import facebookPath from '../../../../assets/facebook.png';
 
-export default class SocialMedia extends Component {
-    render(){
+export default function SocialMedia() {
+    
         return(
             <div className="social-media-wrap">
                 <div className="social-facebook">
@@ -19,5 +19,4 @@ export default class SocialMedia extends Component {
                 </div>
             </div>
         )
-    }
 }

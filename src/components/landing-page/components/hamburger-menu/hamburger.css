@@ -91,8 +91,6 @@
     transition-delay: 1.25s;
 }
 .menu-contents li:hover {
-    transform: translateX(0%) rotateX(-360deg) !important;
-    transform-origin: center !important;
-    background: #fff;
-    color: black;
+    transition-delay: 0s;
+    transform: translateX( 10px )!important
 }

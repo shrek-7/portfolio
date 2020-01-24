@@ -6,6 +6,8 @@ import NameCard from './components/name-card';
 import SocialMedia from './components/social-media';
 import Hamburger from './components/hamburger-menu';
 
+import hack from '../../assets/hacker.svg';
+
 import './landing-page.css';
 
 export default class LandingPage extends Component {
@@ -66,68 +68,13 @@ export default class LandingPage extends Component {
                         <li>!</li>
                     </ul>
                 </div>
-                {/* <Particles 
-                    params={{
-                            particles: {
-                                line_linked: {
-                                    shadow: {
-                                        enable: true,
-                                        color: "#3CA9D1",
-                                        blur: 5
-                                    }
-                                },
-                                number: {
-                                    value: 20
-                                },
-                                size: {
-                                    value: 3
-                                },
-                                move: {
-                                    direction: 'top-right',
-                                    speed: 1
-                                },
-                                opacity: {
-                                    anim: {
-                                        enable: true,
-                                        speed: 1
-                                    }
-                                }
-                            },
-                            interactivity: {
-                                events: {
-                                    onhover: {
-                                        enable: true,
-                                        mode: "grab"
-                                    },
-                                    onclick:{
-                                        enable: true,
-                                        mode: 'push'
-                                    }
-                                },
-                                modes: {
-                                    repulse: {
-                                        distance: 80,
-                                        duration: 0.4
-                                    },
-                                    grab: {
-                                        distance: 250
-                                    }
-                                }
-                            }
-                        }}
-                    style={{
-                        width: '100%',
-                        height: '100vh',
-                        position: 'fixed',
-                        top:0,
-                        left:0 
-                    }}
-                /> */}
                 <div className="name-card-cont">
-                    {/* <NameCard/> */}
+                    <img className="name-card-logo" src={hack}/>
+                    <NameCard/>
                 </div>
                 <div className="social-media-cont">
                     <SocialMedia/>
+                    
                 </div>
                 <div className="hamburger-menu__icon" onClick={(e)=> this.toggleHamburger(e)}>
                         <ul>

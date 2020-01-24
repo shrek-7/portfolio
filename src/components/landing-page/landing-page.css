@@ -4,16 +4,24 @@
     justify-content: center;
     min-height: 100vh;
     position: relative;
-    background-image: radial-gradient(circle, #200535 0%, #0F121A 100%);
+    /* background-image: radial-gradient(circle, #200535 0%, #0F121A 100%); */
+    background-color: #d8d8cd;
 }
 
 .name-card-cont {
     width: 50%;
     display: flex;
     justify-content: flex-start;
-    color: #fff;
+    color: #000;
     z-index: 1;
     padding: 0px 40px 40px 40px;
+    position: relative;
+}
+.name-card-logo{
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    height: 12rem;
 }
 
 .social-media-cont {
@@ -199,7 +207,7 @@
 
 .hamburger-menu__bar {
     height: 1px;
-    background: white;
+    background: #000;
     width: 24px;
     margin-bottom: 3px;
     list-style: none;
