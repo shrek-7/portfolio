@@ -24,9 +24,7 @@ export default class HamburgerMenu extends Component {
                 <section className="menu-contents">
                     <ul>
                         <li>home</li>
-                        <li>work</li>
                         <li>stack</li>
-                        <li>contact</li>
                     </ul>
                 </section>
             </div>  

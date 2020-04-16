@@ -1,7 +1,5 @@
 import React,{Component} from 'react';
 
-import Particles from 'react-particles-js';
-
 import NameCard from './components/name-card';
 import SocialMedia from './components/social-media';
 import Hamburger from './components/hamburger-menu';

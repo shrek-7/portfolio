@@ -4,8 +4,9 @@
     justify-content: center;
     min-height: 100vh;
     position: relative;
-    /* background-image: radial-gradient(circle, #200535 0%, #0F121A 100%); */
-    background-color: #d8d8cd;
+    background: #0B486B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .name-card-cont {
@@ -20,7 +21,7 @@
 .name-card-logo{
     position: absolute;
     left: 15px;
-    top: -10px;
+    top: -20px;
     height: 12rem;
 }
 

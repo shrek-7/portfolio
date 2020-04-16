@@ -1,36 +1,28 @@
 import React, { Component } from 'react';
 import LandingPage from './components/landing-page';
-import {ThemeContext} from './context';
-import ThemeTogglerButton from './components/landing-page/components/themeToggleButton';
+import WallClock from './components/landing-page/components/wall-clock';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
 
-  constructor(props) {
-    super(props);
-
-    this.toggleTheme = (theme) => {
-      console.log(theme);
-    };
-
-    // State also contains the updater function so it will
-    // be passed down into the context provider
-    this.state = {
-      theme: 'light',
-      toggleTheme: this.toggleTheme,
-    };
-  }
-
-
   render() {
     return (
-      
+      <BrowserRouter>
         <div className="App">
-            <LandingPage/>
-            <ThemeContext.Provider value={this.state}>
-              {/* <ThemeTogglerButton label="myButton"  /> */}
-            </ThemeContext.Provider>
+          <Switch>
+              <Route
+                path="/home"
+                render={() => <LandingPage />}
+              />
+              <Route
+                path="/clock"
+                render={() => <WallClock />}
+              />
+              <Redirect exact from="/" to="/home" />
+          </Switch>
         </div>
+      </BrowserRouter>
     );
   }
 }
